@@ -1,2 +1,4 @@
-# projeto_carrinho
-Projeto individual carrinho de compras, módulo 6, Luiza Code.
+# Shopping cart   :shopping_cart:
+
+### Projeto API de carrinho de compra Luiza Code, módulo 6.
+
