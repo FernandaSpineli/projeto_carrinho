@@ -1,0 +1,103 @@
+#######################################
+############  usuário  ################
+#######################################
+
+# Criar usuário
+POST http://127.0.0.1:8000/usuarios HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "nome": "Chaves",
+    "email": "sanduichedepresunto@gmail.com",
+    "senha": "1234"
+}
+
+#######################################
+# Pegar usuário
+GET http://127.0.0.1:8000/usuarios?id=1 HTTP/1.1
+content-type: application/json
+
+#######################################
+# Pegar usuário por nome
+GET http://127.0.0.1:8000/usuarios/nome?nome=Chaves HTTP/1.1
+content-type: application/json
+
+#######################################
+# Pegar e-mails
+GET http://127.0.0.1:8000/usuarios/emails?dominio=gmail.com HTTP/1.1
+content-type: application/json
+
+#######################################
+# Deletar usuário
+DELETE  http://127.0.0.1:8000/usuarios/1 HTTP/1.1
+content-type: application/json
+
+#######################################
+############  endereço  ###############
+#######################################
+
+# Criar endereço
+POST http://127.0.0.1:8000/usuarios/1/enderecos HTTP/1.1
+content-type: application/json
+
+{
+    "rua": "Rua Ladrilhada",
+    "cep": "1111111-444",
+    "cidade": "São Paulo",
+    "estado": "SP"
+}
+
+#######################################
+# Pegar endereços do usuário
+GET http://127.0.0.1:8000/usuarios/1/enderecos HTTP/1.1
+content-type: application/json
+
+#######################################
+# Excluir endereço
+DELETE http://127.0.0.1:8000/enderecos/1 HTTP/1.1
+content-type: application/json
+
+#######################################
+############  produto  ################
+#######################################
+
+# Criar produto
+POST http://127.0.0.1:8000/produtos HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "nome": "Sorvete",
+    "descricao": "Doce gelado",
+    "preco": 9.99
+}
+
+#######################################
+# Excluir Produto
+DELETE http://127.0.0.1:8000/produtos/1 HTTP/1.1
+content-type: application/json
+
+
+#######################################
+############  carrinho  ###############
+#######################################
+
+# Criar carrinho
+POST http://127.0.0.1:8000/usuarios/1/carrinhos/produtos/1/ HTTP/1.1
+content-type: application/json
+
+#######################################
+# Retornar carrinho
+GET http://127.0.0.1:8000/usuarios/1/carrinhos HTTP/1.1
+content-type: application/json
+
+#######################################
+# Retornar valor total do carrinho
+GET http://127.0.0.1:8000/usuarios/1/carrinhos/valor HTTP/1.1
+content-type: application/json
+
+#######################################
+# Excluir carrinho
+DELETE  http://127.0.0.1:8000/usuarios/1/carrinhos HTTP/1.1
+content-type: application/json

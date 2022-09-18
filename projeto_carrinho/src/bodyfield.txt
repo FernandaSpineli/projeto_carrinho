@@ -1,0 +1,44 @@
+========= USUÁRIOS PARA TESTE =========
+{
+    "id": 2,
+    "nome": "Quico",
+    "email": "bolaquadrada@gmail.com",
+    "senha": "5674"
+}
+
+{
+    "id": 3,
+    "nome": "Dona Florinda",
+    "email": "xicaradecafe@gmail.com",
+    "senha": "1583"
+}
+
+========= ENDEREÇOS PARA TESTE =========
+{
+    "rua": "Rua da Felicidade",
+    "cep": "333333-555",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+}
+
+{
+    "rua": "Rua Encantada",
+    "cep": "11111-888",
+    "cidade": "Franca",
+    "estado": "SP"
+}
+========= PRODUTOS PARA TESTE =========
+
+{
+    "id": 2,
+    "nome": "Refresco de Tamarino",
+    "descricao": "Suco de sabor sortido",
+    "preco": 1.00
+}
+
+{
+    "id": 3,
+    "nome": "Pirulito",
+    "descricao": "Doce colorido",
+    "preco": 5.78
+}
